@@ -1,49 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetNest | Products</title>
-    <!-- External CSS -->
-    <link rel="stylesheet" href="./css/products.css">
-    <!-- FA CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetNest | Products</title>
+  <link rel="stylesheet" href="./css/products.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    nav {
+      background-color: #f45b69;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .nav-btns button {
+      background-color: white;
+      color: #f45b69;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      color: #f45b69;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .product-info {
+      background: #fff3f1;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(244, 91, 105, 0.3);
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4b4b4b;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-logo">
+      <img src="./assets/images/logo.png" alt="logo" height="70" />
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li>
+          <a href="./index.html"
+            ><i class="fa-solid fa-house-chimney-user"></i> Home</a
+          >
+        </li>
+        <li>
+          <a href="./about.html"
+            ><i class="fa-solid fa-address-card"></i> About</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-paw"></i> Products</a
+          >
+        </li>
+        <li>
+          <a href="./contact.html"
+            ><i class="fa-solid fa-phone-volume"></i> Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="nav-btns">
+      <button>Buy Now</button>
+    </div>
+  </nav>
 
-    <!-- Navbar Start -->
+  <main>
+    <h1>Our Products</h1>
+    <div class="product-info">
+      <p>
+        At PetNest, we offer a wide range of premium pet food products
+        specially formulated to meet the nutritional needs of pets at every
+        life stage. Our products are crafted with high-quality ingredients
+        to ensure your pet’s health, vitality, and happiness.
+      </p>
+      <p>
+        Whether you have a playful puppy, a curious cat, or a senior pet, our
+        carefully balanced recipes provide essential vitamins, minerals, and
+        proteins. We prioritize natural ingredients and avoid artificial
+        preservatives, ensuring every meal is both tasty and wholesome.
+      </p>
+      <p>
+        Our products support various dietary needs including grain-free,
+        sensitive stomach, weight management, and more. Each product undergoes
+        rigorous quality checks to guarantee safety and consistency.
+      </p>
+      <p>
+        Choose PetNest for nutrition that nourishes, energizes, and supports
+        your pet’s well-being every day.
+      </p>
+    </div>
+  </main>
 
-    <nav>
-        <div class="nav-logo">
-            <img src="./assets/images/logo.png" alt="logo" height="70">
-        </div>
-
-        <div class="nav-links">
-            <ul>
-                <li><a href="./index.html"><i class="fa-solid fa-house-chimney-user"></i> Home</a></li>
-                <li><a href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
-                <li><a href="#"><i class="fa-solid fa-paw"></i> Products</a></li>
-                <li><a href="./contact.html"><i class="fa-solid fa-phone-volume"></i> Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-btns">
-            <button>Buy Now</button>
-        </div>
-
-    </nav>
-
-    <!-- Navbar End -->
-
-
-    <!-- Main Start -->
-
-    <main>
-        <h1>This is Products Page</h1>
-    </main>
-
-
-    <!-- Main End -->
-    
+  <footer>
+    <p>&copy; 2025 PetNest. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
 </body>
 </html>
